@@ -44,9 +44,17 @@ public class Main {
 						
 						Products products = productsService.getProductById(productId,listProducts);
 						if(products != null) {
+							int number = 0;
+							do {
 							System.out.print("Enter the number of product: ");
-							int number = sc.nextInt();
-							
+							number = sc.nextInt();
+							if(number <= 0){
+								System.out.println("product quantity must be greater than 0");
+
+							}
+							else {
+
+
 							//if order empty
 							if(listOrderDetails.size()==0) {
 								OrderDetails orderDetails2 = orderDetails.addProductByOrderDetails(products, number);
@@ -74,7 +82,8 @@ public class Main {
 										a = 0;
 								}
 							}
-							
+							}
+							}while (number <= 0);
 						}
 						else if (products == null && productId != 0){
 							System.out.println("No products found with id " + productId);

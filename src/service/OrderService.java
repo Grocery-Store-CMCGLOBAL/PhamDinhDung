@@ -18,7 +18,7 @@ public class OrderService {
 		for(OrderDetails orderDetails : list) {
 			System.out.println("***Product Name: " + orderDetails.getProducts().getName());
 			System.out.println("Amount: " + orderDetails.getAmount());
-//			System.out.println("Actual mount : " + (orderDetails.getAmount()- orderDetails.getAmountAfterPromotion()));
+			System.out.println("Actual amount : " + orderDetails.getAmountAfterPromotion());
 			System.out.println("Price : " + orderDetails.getProducts().getPrice());
 			System.out.println("Money: " + orderDetails.getTotalMoneyAfterPromotion());
 		}

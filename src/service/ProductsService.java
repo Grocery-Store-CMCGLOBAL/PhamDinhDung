@@ -13,7 +13,7 @@ public class ProductsService {
 		
 		Products product1 = new Products(1, "chips", new PromotionType(0, "2 get 1"), 35, "bag");
 		Products product2 = new Products(2, "rice", new PromotionType(20, null), 45, "kg");
-		Products product3 = new Products(3, "cake Chocopie", new PromotionType(0, "3 get 2"), 50, "bag");
+		Products product3 = new Products(3, "cake Chocopie", new PromotionType(0, "1 get 1"), 50, "bag");
 		Products product4 = new Products(4, "water", new PromotionType(0, null), 10, "bottle");
 		Products product5 = new Products(5, "bird's nest water", new PromotionType(0, "5 get 1"), 45, "bottle");
 		
